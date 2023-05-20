@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Estilos_tp/estilos_index.css">
+    <link rel="stylesheet" href="../Estilos_tp/register.css">
+    <title>Registro de usuario</title>
+</head>
+
+<body>
+    <header> <!--inicio header-->
+        <nav class="navbar container">
+            <a href="./index.html" target="_blank">
+                <picture class="navbar__logo">
+                    <img src="../Imagenes/branding/logo_light_horizontal.svg" alt="">
+                </picture>
+            </a>
+            <p class="navbar__link"><a href="../index.html">SALIR</a></p>
+        </nav>
+    </header>
+    <main class="container">
+        <h2>CREA TU CUENTA</h2>
+        <p>Completa el formulario para ser parte del mundo de los Funkos</p>
+        <!-- action = "url" - Indica la URL que se encarga de procesar los datos del formulario
+
+method = "POST o GET" - Método HTTP empleado al enviar el formulario
+
+enctype = "application/x-www-form-urlencoded o multipart/form-data" - Tipo de codificación empleada al enviar el formulario al servidor (sólo se indica de forma explícita en los formularios que permiten adjuntar archivos) -->
+
+        <form action="/register" method="POST" enctype="application/x-www-form-urlencoded">
+            <!-- el método POST permite el envío de mucha más información que el método GET. En general, el método GET admite como máximo el envío de unos 500 bytes de información. La otra gran limitación del método GET es que no permite el envío de archivos adjuntos con el formulario. Además, los datos enviados mediante GET se ven en la barra de direcciones del navegador (se añaden al final de la URL de la página), mientras que los datos enviados mediante POST no se pueden ver tan fácilmente. Existe una regla general que dice que el método GET se debe utilizar en los formularios que no modifican la información (por ejemplo en un formulario de búsqueda). Por su parte, el método POST se debería utilizar cuando el formulario modifica la información original (insertar, modificar o borrar alguna información). -->
+            <div>
+                <label class="segundaColumna" for="name">Nombre:</label>
+                <input class="terceraColumna" type="text" name="name" id="name" placeholder="John" required>
+            </div>
+            <!-- size permite establecer el tamaño, en caracteres, con el que se muestra el cuadro de texto -->
+            <div>
+                <label class="segundaColumna" for="lastname">Apellido:</label>
+                <input class="terceraColumna"  type="text" name="lastname" id="lastname" placeholder="Doe" required>
+            </div>
+            <!-- también se puede limitar el tamaño del texto introducido. El atributo maxlength permite establecer el máximo número de caracteres que el usuario puede introducir en un cuadro de texto. -->
+            <div>
+                <label class="segundaColumna" for="email">Email:</label>
+                <input class="terceraColumna"  type="email" name="email" id="email" placeholder="johndoe@email.com" required>
+            </div>
+            <div>
+                <label class="segundaColumna" for="password">Contraseña:</label>
+                <input class="terceraColumna"  type="password" name="password" id="password"
+                    placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required>
+            </div>
+            <div>
+                <label class="segundaColumna"for="repassword">Repite Contraseña:</label>
+                <input class="terceraColumna"   type="repassword" name="repassword" id="password"
+                    placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required>
+            </div>
+            <div>                
+                <input id="boton" type="button" value="Registrar">
+                <span>
+                    <input type="checkbox" name="" id="check">
+                   <a href="http://" target="_blank">Acepto Términos y Condiciones</a>
+                </span>
+                
+            </div>
+
+        </form>
+    </main>
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item"><a href="./Paginas/shop.html" class="navbar__link" target="_blank"> SHOP</a>
+                </li>
+                <li class="navbar__item"><a href="./Paginas/login.html" class="navbar__link" target="_blank">
+                        REGISTRARSE</a></li>
+                <li class="navbar__item"><a href="./Paginas/ingreso.html" class="navbar__link" target="_blank">
+                        INGRESAR</a></li>
+                <li class="navbar__item"><a href="./Paginas/contacto.html" class="navbar__link" target="_blank">
+                        CONTACTO</a></li>
+            </ul>
+
+            <picture>
+                <img src="../Imagenes/branding/isotype.svg" width="" alt="Svgjs">
+            </picture>
+        </nav>
+
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop & Copy</p>
+    </footer>
+
+</body>
+
+</html>

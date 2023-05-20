@@ -1,0 +1,50 @@
+form{
+    display: flex;
+    padding: var(--espacio-20);
+    gap: var(--espacio-28);
+}
+
+.titulo{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    padding: var(--espacio-20) 0;
+    font-size: var(--font-medium);
+}
+
+#filtro{
+    padding-left: 10px;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.agregarProducto{
+    
+    background-color: var(--primario-solid);
+    border-color: var(--primario-solid);
+    color: white ;
+    font-size: var(--font-medium);
+    margin-left: var(--espacio-16);
+    padding: 0px 7px;
+    cursor: pointer;
+
+}
+.header{
+    background-color: var(--claro-bg-solid);
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr 1fr;
+    color:var(--dark-solid);
+    padding-left: var(--espacio-16);
+    font-size: var(--font-medium);
+    
+   
+ 
+}
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr 1fr;
+    padding: var(--espacio-16);
+    color:var(--dark-solid);
+}
+.cambios{
+    display: flex;
+}

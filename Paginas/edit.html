@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Estilos_tp/estilos_index.css">
+    <link rel="stylesheet" href="../Estilos_tp/edit.css">
+    <title>EDIT</title>
+</head>
+<body>
+    <header> <!--inicio header-->
+        <nav class="navbar container">
+            <a href="./index.html" target="_blank">
+                <picture class="navbar__logo">
+                    <img src="../Imagenes/branding/logo_light_horizontal.svg" alt="">
+                </picture>
+            </a>
+            <p  class="navbar__link"><a href="../index.html">SALIR</a></p>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>EDITAR ITEM</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+            <!--Si se incluye un control para adjuntar archivos, es obligatorio añadir el atributo enctype en la etiqueta <form> del formulario. El valor del atributo enctype debe ser multipart/form-data-->
+            <section>
+                <p>Categoría: <select name="categoria" id="categoria">
+                    <option value="" 
+                    >Seleccionar</option>
+                    <option value="Figuras Coleccionables" disabled selected hidden>Figuras Coleccionables</option>
+                    <option value="Llaveros">Llaveros</option>
+                    <option value="Remeras">Remeras</option>
+                    </select> </p>
+                <p>Licencia: <select name="licencia" id="licencia">
+                        <option value="">Seleccionar</option>
+                        <option value="starwars">Star Wars</option>
+                        <option value="pokemon">Pokemon</option>
+                        <option value="harrypotter">Harry Potter</option>
+                        <option value="naruto" disabled selected hidden>Naruto Shippuden</option>
+                    </select></p>
+            </section>
+            <!-- <label for="nombreProducto">Nombre del producto:</label> -->
+            <p>Nombre del producto:  <input type="text" name="nombreProducto" id="nombreProducto" placeholder=" Kakashi Hatake Shippuden Saga" required></p>
+            <textarea name="descripcionProducto" id="" cols="80" rows="10"
+                placeholder="">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.  </textarea>
+            <section>
+                <p>SKU: <input type="text" name="" id="" placeholder="SSk111AB001" required></p>
+                <p>Precio: <input type="text" placeholder="$ 1.799,00" required></p>
+                <p>Stock: <input type="text" placeholder="   10" required></p>
+            </section>
+            <section>
+                <p>Descuento: <input type="text" placeholder="10%"></p>
+                <p>Cuotas: <select name="" id="">
+                        <option value="0">0 cuotas</option>
+                        <option value="3" disabled selected hidden>3 cuotas sin interés</option>
+                        <option value="6">6 cuotas</option>
+                        <option value="9">9 cuotas</option>
+                        <option value="12">12 cuotas</option>
+                        <option value="18">18 cuotas</option>
+                        <option value="24">24 cuotas</option>
+    
+                    </select></p>
+            </section>
+            <span>Imágenes:
+                <!--Los formularios también permiten adjuntar archivos para subirlos al servidor.El valor del atributo type para este control de formulario es file. El navegador se encarga de mostrar un cuadro de texto donde aparece el nombre del archivo seleccionado y un botón que permite navegar por los directorios y archivos del ordenador del usuario. con multiple se pueden subir varios archivos a la vez-->
+                <input type="file" name="adjunto" id="" multiple></span>
+                <div class="imagenes">
+                    <div id="imagenUno">
+                        <img  src="../Imagenes/star-wars/trooper-1.webp" alt="Figura Funko coleccionable de Hermione">
+                        <p>Frente</p>
+                    </div>
+                    <div id="imagenDos">
+                        <img  src="../Imagenes/star-wars/trooper-box.webp" alt="Figura Funko coleccionable de Hermione en caja">
+                        <p>Dorso</p>
+                    </div>
+                </div>
+    
+            <section>
+                <button type="submit">Modificar Producto</button>
+                
+    
+            </section>
+
+        </form>
+        <!-- <form class="edicion-articulo">
+            <label for="categoria">Categoría:</label>
+            <select name="categoria" id="categoria"><option >Figuras</option> </select>
+    
+            <label for="licencia">Licencia:</label>
+            <select name="licencia" id="licencia"><option>Naruto Shippuden</option></select>
+            <label for="nombreProducto">Nombre del producto:</label>
+            <input type="text" name="nombreProducto" id="nombreProducto">
+            <textarea name="descripcionProducto" id="" cols="30" rows="10" placeholder="Descripción del producto">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.  </textarea>
+            <label for="">Precio: </label>
+            <input type="text" placeholder="$ 0.000,00">
+            <label for="">Stock: </label>
+            <input type="text" placeholder="0">
+            <label for="">Descuento: </label>
+            <input type="text" placeholder="0%">
+            <label for="">Cuotas:</label>
+            <select name="" id=""><option value="">6 cuotas sin interés</option></select>
+            <label for="">Imágenes:</label>
+          
+            <input type="file" name="adjunto" id=""  multiple>
+          
+            <input type="submit" value="Agregar producto">
+            <input type="reset" value="Limpiar">        
+             
+    
+        </form> -->
+    </main>
+    
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item"><a href="./Paginas/shop.html" class="navbar__link" target="_blank"> SHOP</a>
+                </li>
+                <li class="navbar__item"><a href="./Paginas/login.html" class="navbar__link" target="_blank">
+                        REGISTRARSE</a></li>
+                <li class="navbar__item"><a href="./Paginas/ingreso.html" class="navbar__link" target="_blank">
+                        INGRESAR</a></li>
+                <li class="navbar__item"><a href="./Paginas/contacto.html" class="navbar__link" target="_blank">
+                        CONTACTO</a></li>
+            </ul>
+
+            <picture>
+                <img src="../Imagenes/branding/isotype.svg" width="" alt="Svgjs">
+            </picture>
+        </nav>
+
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop & Copy</p>
+    </footer>
+
+</body>
+</html>

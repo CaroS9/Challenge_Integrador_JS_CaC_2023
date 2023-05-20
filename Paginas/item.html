@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Estilos_tp/estilos_index.css">
+    <link rel="stylesheet" href="../Estilos_tp/item.css">
+    <title>Item</title>
+</head>
+<body>
+    <header> <!--inicio header-->
+        <nav class="navbar container"> <!-- container acota el width a 1200px -->
+            <picture class="navbar__logo">
+                <a href="./index.html">
+                    <img src="../Imagenes/branding/logo_light_horizontal.svg" alt="logo">
+            </picture>
+            </a>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link whith-icon" href="./Paginas/shop.html" target="_blank"> SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./Paginas/contacto.html" target="_blank"> CONTACTO </a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./Paginas/login.html" target="_blank"> LOGIN </a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__cart" href="./Paginas/carr.html" target="_blank"> 
+                        <img src="../Imagenes/icons/cart-icon.svg" alt="carrito">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="main__producto">
+            <picture class="main__imagen">
+                <img src="../Imagenes/star-wars/baby-yoda-1.webp" alt="Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga">
+            </picture>
+            <article class="main__articulo">
+                <p>STARS WARS</p>
+                <h3>BABY YODA BLUEBALL</h3>
+                <p>Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
+                <h4>$ 1799,99.-</h4>
+                <form class="main__carrito" action="" ethod="post">                
+                    <button type="button" class="menos">-</button>
+                    <input type="text" name="" id="" placeholder="0"> 
+                    <button type="button" class="mas">+</button>                   
+                    <button type="submit" class="agregar">AGREGAR AL CARRITO</button>
+                </form>
+                <p class="promo"><a  href="http://" target="_blank" >Ver métodos de pago </a><span>- 3 CUOTAS SIN INTERÉS</span></p>
+
+            </article>
+        </section>
+        <section class="slider"> 
+        <h2 class="slider__title">PRODUCTOS RELACIONADOS</h2>
+        <ul class="slider__items container"> <!--este es el contenedor del slider y necesita un display flex-->
+            <li class="slider__item">
+                <article class="card__item">
+                    <a class="card__item__link" href="">
+                        <picture class="card__item__cover">
+                            <span class="card__item__tag">NUEVO</span>
+                            <img class="card__item__img__front" src="../Imagenes/star-wars/trooper-1.webp" alt="TROOPER">
+                            <img class="card__item__img__back" src="../Imagenes/star-wars/trooper-box.webp" alt="trooper">
+                        </picture>
+                        <div class="card__item__content">
+                            <p class="card__item__licence">STAR WARS</p>
+                            <h4 class="card__item__name">STORMTROOPER LS</h4>
+                            <p class="card__item__price">$ 1799,99.-</p>
+                            <p class="card__item__promo">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+            </li>
+            <li class="slider__item">
+                <article class="card__item">
+                    <a class="card__item__link" href="">
+
+                        <picture class="card__item__cover">
+                            <span class="card__item__tag">NUEVO</span>
+                            <img class="card__item__img__front" src="../Imagenes/pokemon/pidgeotto-1.webp"
+                                alt="pidgeotto">
+                            <img class="card__item__img__back" src="../Imagenes/pokemon/pidgeotto-box.webp"
+                                alt="pidgeotto">
+                        </picture>
+                        <div class="card__item__content">
+                            <p class="card__item__licence">POKEMON</p>
+                            <h4 class="card__item__name">PIDGEOTTO</h4>
+                            <p class="card__item__price">$ 1799,99.-</p>
+                            <p class="card__item__promo">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+
+            </li>
+            <li class="slider__item">
+                <article class="card__item">
+                    <a class="card__item__link" href="">
+
+                        <picture class="card__item__cover">
+                            <span class="card__item__tag">NUEVO</span>
+                            <img class="card__item__img__front" src="../Imagenes/harry-potter/luna-1.webp" alt="luna">
+                            <img class="card__item__img__back" src="../Imagenes/harry-potter/luna-box.webp" alt="luna">
+                        </picture>
+                        <div class="card__item__content">
+                            <p class="card__item__licence">HARRY POTTER</p>
+                            <h4 class="card__item__name">LUNA LOVEGOOD LM</h4>
+                            <p class="card__item__price">$ 1799,99.-</p>
+                            <p class="card__item__promo">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+
+            </li>
+        </ul>
+    </section>
+    </main>
+    <footer class="footer">
+
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./Paginas/shop.html" target="_blank"> SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./Paginas/login.html" target="_blank">
+                        REGISTRARSE</a>
+                    </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./Paginas/ingreso.html" target="_blank">
+                    INGRESAR</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./Paginas/contacto.html" target="_blank">
+                    CONTACTO</a></li>
+            </ul>
+            <picture>
+                <img src="../Imagenes/branding/isotype.svg" width="" alt="Svgjs">
+            </picture>
+
+        </nav>
+
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop & Copy</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+   
+</body>
+</html>

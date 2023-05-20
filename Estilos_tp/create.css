@@ -1,0 +1,36 @@
+h1{
+    margin-top: var(--espacio-28);
+    font-size: var( --font-large);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--espacio-20);
+    margin-top: var(--espacio-20);
+    margin-bottom: var(--espacio-20);
+}
+p , span{
+    font-size: var(--font-small);
+}
+
+p input{
+    border: none;
+    border-bottom: 2px solid var(--primario-900);
+    /* width: 20%; */
+}
+
+section{
+    display: flex;
+    gap: 30px;
+}
+
+button{
+    background-color: var(--primario-900);
+    border: none;
+    color: white;
+    padding: var(--espacio-8);
+    width: 120px;
+    padding-left: 0.2rem;
+    cursor: pointer;
+}
