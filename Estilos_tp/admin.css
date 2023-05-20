@@ -36,16 +36,16 @@ form{
     color:var(--dark-solid);
     padding-left: var(--espacio-16);
     font-size: var(--font-medium);
-    
-   
  
 }
+
 article{
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 2fr 1fr;
     padding: var(--espacio-16);
     color:var(--dark-solid);
 }
+
 .cambios{
     display: flex;
 }
