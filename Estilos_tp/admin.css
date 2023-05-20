@@ -28,6 +28,7 @@ form{
     cursor: pointer;
 
 }
+
 .header{
     background-color: var(--claro-bg-solid);
     display: grid;
