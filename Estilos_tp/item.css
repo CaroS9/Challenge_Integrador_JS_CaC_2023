@@ -38,27 +38,30 @@ p a{
     display: flex;
     
 }
-.menos, .mas{
+#menos, #mas{
     width: 40px;
     height: 40px;
     margin-right: var(--espacio-12);
     background-color: var(--dark-solid);
     color: var(--claro-fuente-solid);
     font-size: var(--font-medium);
+    cursor: pointer;
 
 
 }
 
-form input{
+/* form input{ */
+#carrito{
     width: 40px;
     height: 40px;
     background-color: var(--claro-bg-solid);
     text-align: center;
     margin-right: var(--espacio-12);
     border-color: var(--dark-300);
+    
 
 }
-.agregar{
+#agregar{
     background-color: var(--primario-900);
     color: var(--claro-fuente-solid);
     padding: var(--espacio-8);
